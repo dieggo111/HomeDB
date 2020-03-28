@@ -1,0 +1,18 @@
+{% block content %}
+
+<h1>DB Users</h1>
+
+{% block table %}
+
+<tr>
+{% for column in table.columns %}
+    <th>{{ column.header|title }}</th>
+{% endfor %}
+</tr>
+<tr>
+{% for item in object_list %}
+    <td>{{item.name}}</td><td>{{item.email}}</td>
+{% endfor %}
+</tr>
+{% endblock table %}
+{% endblock %}

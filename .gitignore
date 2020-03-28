@@ -1,0 +1,3 @@
+.vscode
+home_db/queries.py
+db.sqlite3
